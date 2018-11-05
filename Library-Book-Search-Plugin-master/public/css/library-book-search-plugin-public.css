@@ -1,0 +1,248 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+@font-face{
+  font-family:star;
+  src:url(../fonts/star.eot);
+  src:url(../fonts/star.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/star.woff) format("woff"),
+  url(../fonts/star.ttf) format("truetype"),
+  url(../fonts/star.svg#star) format("svg");
+  font-weight:400;font-style:normal}
+.search-book-list{
+  padding: 15px;
+  width: 100%;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  background: #f9f9f9;
+  box-shadow: 0px 0 1px #999;
+}
+.search-book-list .search-heading {
+  text-align: center;
+  font-size: 20px;
+}
+.search-book-list .lbs-col-md-2 {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+.search-book-list .lbs-col-md-1 {
+  width: 100%;
+  clear: both;
+  text-align: center;
+}
+.search-book-list select,
+.search-book-list input[type="text"] {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 0px solid #999;
+  box-shadow: 0 0 1px #999;
+}
+.search-book-list input[type="range"] {
+  width: 100%;
+}
+.search-book-list label {
+  font-size: 16px;
+}
+.search-book-list .btn-book-search {
+  margin-top: 10px;
+  width: 200px;
+  border: 1px solid #999;
+  background: #999;
+  border-radius: 1px;
+  color: #fff;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.84375em 0.875em 0.78125em;
+  text-transform: uppercase;
+}
+.search-book-list .btn-book-search:hover {
+  background:#fff;
+  color:#999;
+}
+
+table.book-list{
+  border-collapse: collapse;
+  margin-top: 15px;
+  width: 100%;
+  border: 0;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  background: #f9f9f9;
+  box-shadow: 0px 0 1px #999;
+}
+.book-list tr td:nth-child(1),
+.book-list tr th:nth-child(1) {
+  width: 40px;
+  text-align: center;
+}
+.book-list tr td:nth-child(3),
+.book-list tr th:nth-child(3) {
+  width: 75px;
+}
+thead th {
+  border-bottom: 2px solid #bbb;
+  padding-bottom: 0.5em;
+}
+
+.book-list th {
+  padding: 0.4em;
+  text-align: left;
+}
+
+.book-list tr {
+  border-bottom: 1px solid #eee;
+}
+
+.book-list td,.book-list th {
+  padding: 0.4em;
+  border: 0;
+  font-size:16px;
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+.inner-rating {
+  height: 11px;
+  width: 70px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.star-rating {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1;
+  font-size: 1em;
+  width: 5.4em;
+  font-family: star;
+  font-weight: 400;
+}
+.star-rating:before {
+  color: #000000;
+  content: '\73\73\73\73\73';
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.star-rating span:before {
+  color: #000000;
+  content: '\53\53\53\53\53';
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+.book-pagination .page-numbers {
+  border: 1px solid #999;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 25px;
+}
+.book-pagination .page-numbers.next,
+.book-pagination .page-numbers.prev {
+  width: auto;
+  padding: 0 10px;
+}
+.book-pagination .page-numbers:hover,
+.book-pagination .current {
+  border: 1px solid #999;
+  background: #999;
+  color: #fff;
+}
+.book-pagination .dots,
+.book-pagination .dots:hover {
+  border:0;
+  background: transparent;
+}
+.price-range{
+  margin-left: 15px;
+  font-size: 15px;
+}
+#book-price .ui-widget-header{
+  background: #000;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #3e3c36 !important;
+  background: #efead2 !important;
+  font-weight: bold;
+  color: #615b52 !important;
+}
+
+.type-book .book-image, .type-book .book-content {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+.type-book .book-image {
+  text-align: center;
+}
+.type-book .book-content .book-title {
+  font-size: 35px;
+}
+.type-book .book-content .book-details {
+  margin: 15px 0;
+}
+.type-book .book-content .book-meta-details {
+  margin: 0;
+}
+.type-book .book-content .book-meta-details li {
+  list-style-type: none;
+  float: left;
+  margin-right: 15px;
+}
+.type-book .book-content .book-meta-details li label {
+  font-weight: bold;
+}
+.type-book .book-content .book-meta-details li .star-rating{
+  float: none;
+}
+.type-book .clear-both{
+  clear: both;
+}
+
+/**
+ * Responsive style css
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 667px) {
+  .book-list-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .book-list-table .book-list {
+    min-width: 660px;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .search-book-list .lbs-col-md-2 {
+    width: 100%;
+  }
+}
